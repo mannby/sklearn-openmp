@@ -11,7 +11,7 @@ else
     git reset --hard
 fi
 
-diff ../scikit-learn-17/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp > ../patch1.patch
+diff -C 2 ../scikit-learn-17/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp > ../patch1.patch
 cp ../scikit-learn-17/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp
 
 echo "**************************************************************************************************"
