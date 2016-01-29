@@ -9,11 +9,10 @@ if [ ! -d "scikit-learn" ]; then
 else
     cd scikit-learn
     git reset --hard
-    cp ../17/scikit-learn/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp
 fi
 
-diff ../17/scikit-learn/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp > ../patch1.patch
-cp ../17/scikit-learn/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp
+diff ../scikit-learn-17/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp > ../patch1.patch
+cp ../scikit-learn-17/sklearn/svm/src/liblinear/linear.cpp sklearn/svm/src/liblinear/linear.cpp
 
 echo "**************************************************************************************************"
 echo "Apply svm openmp patch to scikit-learn"
