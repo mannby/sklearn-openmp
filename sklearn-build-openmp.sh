@@ -40,6 +40,6 @@ fi
 
 echo "**************************************************************************************************"
 echo "Enter root password for scikit-learn deployment (install script)"
-#sudo CFLAGS="-fopenmp -DCV_OMP=1" CXXFLAGS="-fofopenmp -DCV_OMP=1" LDFLAGS=-lgomp python setup.py install
+CFLAGS="-fopenmp -DCV_OMP=1" CXXFLAGS="-fofopenmp -DCV_OMP=1" LDFLAGS=-lgomp python setup.py install
 cd ..
 
